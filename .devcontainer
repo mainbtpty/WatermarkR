@@ -4,7 +4,7 @@
 
     "features": {},
 
-    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tesseract-ocr && pip install --user -r requirements.txt",
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tesseract-ocr && pip install --upgrade pip && pip install -r requirements.txt --no-cache-dir && pip install opencv-python-headless --no-cache-dir --force-reinstall"
 
     "customizations": {
         "vscode": {
